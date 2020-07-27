@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- begining of the project -->
+    <div class="container">
+        <!-- main -->
+        <main class="main">
+            <h1 class="heading">Guessing Game</h1>
+            <p class="main__paragraph">We have selected a random number between 1 and 100. see if you can guess it in 10 turns or fewer, we'll tell you if your guess was too high or too low</p>
+            <span class="main__span">good luck!!!</span>
+        </main>
+        <!-- end of main -->
+
+        <!-- submit section -->
+        <section class="submit">
+            <form id="input">
+                <input type="text" placeholder="Enter the guess number" name="number" class="number">
+                
+                <button class="btn submit__btn">Submit</button>
+            </form>
+        </section>
+        <!-- end of submit section -->
+
+        <!-- restart section -->
+        <section class="restart">
+            <p class="previous-paragraph">previous guesses: <span class="guess-values"></span></p>
+            <p class="error"></p>
+            <button class="btn restart__btn">Restart</button>
+        </section>
+        <!-- end of restart section -->
+    </div>
+    <!-- pop-up -->
+    <div class="pop-up animate">
+        <p>GAME OVER&cross;&cross;&cross;</p>
+        <p>YOU ARE SO DULL!!! </p>
+        <button class="btn pop-up__button">ok</button>
+    </div>
+    <!-- end of pop-up -->
+
+    <!-- win pop-up -->
+    <div class="win__pop-up animate">
+        <p>YOU WON&checkmark;;&checkmark;&checkmark;</p>
+        <p>YOU ARE A GENIUS!!! </p>
+        <button class="btn win-pop-up__button">ok</button>
+    </div>
+    <!-- end of win pop-up -->
+
+    <!-- end of the project -->
+    <script src="app.js"></script>
+</body>
+</html>
